@@ -244,7 +244,7 @@
 <div class="payouts">
   <b>💎 Diamond Lock x500</b> | <b>🔐 World Lock x200</b> | <b>🔒 Small Lock x100</b><br>
   🪨 Rock x50 | 🪵 Wood x30 | 🌿 Grass x20 | 🟫 Dirt x10<br>
-  Dua sama = x2 | Jackpot 1:10 chance!
+  Dua sama = x2 
 </div>
 
 <div class="stats">
@@ -399,7 +399,7 @@ async function spin() {
   messageEl.className = 'message';
   reelWindows.forEach(r => r.classList.remove('win'));
   
-  const isJackpotSpin = Math.random() < 0.1;
+  const isJackpotSpin = Math.random() < 0.01;
   let results;
   if (isJackpotSpin) {
     const highSymbols = SYMBOLS.filter(s => s.payout >= 50);
